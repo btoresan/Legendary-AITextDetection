@@ -1,7 +1,8 @@
-10K/11K
-
 Referencia dos papers cujos textos foram retirados para criar o dataset de textos humanos
 
-1:  Medicina uma viagem ao longo do tempo (Eurico de Aguiar - 2010)
-2:  Tópicos de História da Matemática (Tatiana Roque e João Bosco Pitombeira - 2012)
-3:  Metodologia de Pesquisa para Ciência da Computação (Raul Sidnei Wazlawick - 2009)
+0:  Medicina uma viagem ao longo do tempo (Eurico de Aguiar - 2010)
+1:  Tópicos de História da Matemática (Tatiana Roque e João Bosco Pitombeira - 2012)
+2:  Metodologia de Pesquisa para Ciência da Computação (Raul Sidnei Wazlawick - 2009)
+3:  Projeto Pedagógico de Curso: Curso de Engenharia Mecânica Escola Politécnica (Unileste)
+
+12 mil frases humanas feitas antes de 2021

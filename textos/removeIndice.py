@@ -15,7 +15,7 @@ def remove_numeracao_paginas(texto):
     return texto_final
 
 # Exemplo de uso
-with open('Humano.txt', 'r', encoding='utf-8') as arquivo:
+with open('Limpo3.txt', 'r', encoding='utf-8') as arquivo:
     texto_original = arquivo.read()
 
 texto_sem_paginas = remove_numeracao_paginas(texto_original)
