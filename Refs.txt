@@ -1,0 +1,5 @@
+354/11K
+
+Referencia dos papers cujos textos foram retirados para criar o dataset de textos humanos
+
+1:  Medicina uma viagem ao longo do tempo (Eurico de Aguiar - 2010)
