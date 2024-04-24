@@ -1,4 +1,4 @@
-354/11K
+2K/11K
 
 Referencia dos papers cujos textos foram retirados para criar o dataset de textos humanos
 
