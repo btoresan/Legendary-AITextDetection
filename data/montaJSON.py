@@ -1,11 +1,32 @@
 import json
 
-#divide o texro em parte de 1500 caracteres (tamanho da entry da row)
-def split_text_into_rows(text, row_length=1500):
+#divide o texro em parte de (default)140 caracteres (tamanho da entry da row)
+def split_text_into_rows(text, row_length=140):
     rows = []
-    for i in range(0, len(text), row_length):
-        rows.append(text[i:i+row_length])
+    start_idx = 0
+    
+    #Passa por todo o texto
+    while start_idx < len(text):
+        #Estima que o final da row seja daqui a 1500 chars
+        end_idx = min(start_idx + row_length, len(text))
+        
+        #Se o final da row nao for o final do texto e nao estivermeos em um espaco
+        if end_idx < len(text):
+            #Move o final da row pra tras até achar um espaço
+            while end_idx > start_idx and text[end_idx] != ' ':
+                end_idx -= 1
+            #Se nao acharmos um espaço faz o split no fim do index
+            if end_idx == start_idx:
+                end_idx = min(start_idx + row_length, len(text))
+        
+        #Addiciona a nova row ao array
+        rows.append(text[start_idx:end_idx])
+
+        #Move o inicio da proxima row pro fim do atual + 1
+        start_idx = end_idx + 1 if end_idx < len(text) else len(text)
+    
     return rows
+
 
 def main(input_file, output_file):
     #abre o arquivo
@@ -36,6 +57,6 @@ def main(input_file, output_file):
         json.dump(json_data, f, indent=4)
 
 if __name__ == "__main__":
-    input_file = "Limpo2.txt"  #Mudar para o arquivo de entrada
+    input_file = "textos/HUM.txt"  #Mudar para o arquivo de entrada
     output_file = "output.json"  #Mudar para o arquivo de saida
     main(input_file, output_file)
