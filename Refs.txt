@@ -6,3 +6,8 @@ Referencia dos papers cujos textos foram retirados para criar o dataset de texto
 3:  Projeto Pedagógico de Curso: Curso de Engenharia Mecânica Escola Politécnica (Unileste)
 
 12 mil frases humanas feitas antes de 2021
+
+O texto fonte escrito por ia foi tirado do GPT 3.5 de 14/05/2024 à ---, utilizando o seguinte prompt:
+"Eu quero que você reescreva os seguintes textos com as suas próprias palavras mantendo todo conteúdo recebido *texto*"
+
+limpo0 ate 999
